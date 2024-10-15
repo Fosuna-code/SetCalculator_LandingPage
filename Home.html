@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SetCalculator | Home</title>
+    <link rel="stylesheet" type="text/css" href="Style/desktop.css">
+</head>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="Style/img/logo.jpeg" alt="Logo">
+        </div>
+        <span class="menu-toggle">&#9776;</span>
+        <ul>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">About Us</a></li>
+            <li><a href="#" class="nav-link">Blog</a></li>
+            <li><a href="#" class="nav-link">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+</body>
+</html>
+//Mover este script a un documento y harcodearlo para que solo lo enlace, 1 linea
+<script>
+    // Obtener todos los enlaces del menú
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Añadir un evento 'click' a cada enlace
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Remover la clase 'active' de todos los enlaces
+            navLinks.forEach(link => link.classList.remove('active'));
+
+            // Añadir la clase 'active' al enlace que se clickeó
+            this.classList.add('active');
+        });
+    });
+
+    // Menu toggle para versión móvil
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+        navUl.classList.toggle('show');
+    });
+</script>
