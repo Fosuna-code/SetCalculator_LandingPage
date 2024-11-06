@@ -1,0 +1,70 @@
+
+@media only screen and (min-width: 1280px){
+    .blogPost_main{
+        display: flex;
+        width: 100wv;
+        justify-content: center;
+    }
+    #Blogpost{
+        margin-top: 50px;
+    }
+    #BlogPostHeader{
+        margin-bottom: 55px;
+    } 
+    #BlogPostHeader nav ul {
+        list-style: none;
+        display: flex;
+        margin-left: auto;
+        gap: 37px;
+        font-size: 0.875em ;
+        align-items: center;
+    }
+    #userName::after{
+        content: "|";
+        font-size: 0.875em;
+        margin-left: 12px;
+    }
+    #Blogpost main section{
+        width: 1151.012px;
+        height: 450px;
+        margin-top: 30px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #BlogPostHeader h2{
+        color: #000;
+        font-size: 2.25em;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 43px;
+    }
+    .Header_nav_li{
+        color:#6D7D8B;
+    }
+    #BlogPostImage{
+        margin-bottom: 80px;
+    }
+    .postP, .postP_ul li{
+        color: #000;
+        text-align: justify;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: "Noto Sans";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        align-self: flex-start;
+    }
+    .postP_ul li{
+        align-items: auto;
+    }
+    .postP_ul{
+        padding-left: 4em;
+    }
+    #Blogpost .postP:last-child{
+        margin-bottom: 50px;
+    }
+
+}
