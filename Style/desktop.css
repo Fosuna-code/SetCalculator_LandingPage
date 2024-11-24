@@ -1,4 +1,6 @@
-@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+/*Header Desktop Styles*/ 
+
+@media only screen and (min-width: 1280px){
     * {
         margin: 0;
         padding: 0;
@@ -7,8 +9,17 @@
 
     body {
         font-family: Arial, sans-serif;
+                        
+  
     }
-
+    a{
+        text-decoration: none ;
+    }
+    picture{
+       margin:0;
+       padding: 0; 
+       display: block;
+    }
     nav {
         display: flex;
         justify-content: space-between;
@@ -17,21 +28,17 @@
         background-color: white; /* Fondo blanco */
         box-shadow: 0px 3px 25px -9px gray; /* Sombra para destacar el navbar */
     }
-
     nav .logo img {
         height: 50px;
     }
-
     nav ul {
         list-style: none;
         display: flex;
         margin-left: auto;
     }
-
     nav ul li {
         margin-left: 20px;
     }
-
     nav ul li a {
         color: #33AFB9; /* Color azul del texto */
         background-color: white; /* Fondo blanco por defecto */
@@ -42,18 +49,15 @@
         transition: background-color 0.3s, color 0.3s;
         border: 1px solid #33AFB9; /* Bordes azules */
     }
-
     nav ul li a:hover {
         background-color: #33AFB9; /* Fondo azul al hacer hover */
         color: white; /* Texto blanco al hacer hover */
     }
-
     /* Estilos cuando un enlace está activo (seleccionado) */
     nav ul li a.active {
         background-color: #33AFB9; /* Fondo azul cuando está activo */
         color: white; /* Letras blancas cuando está activo */
     }
-
     /* Ocultar menú en móvil y mostrar botón */
     .menu-toggle {
         display: none;
@@ -61,71 +65,15 @@
         color: black; /* Color del ícono de menú hamburguesa */
         cursor: pointer;
     }
+}    
 
+@media only screen and (min-width: 1280px) and (max-width: 1439px) {
 }
 @media only screen and (min-width: 1440px) and (max-width: 1919px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: Arial, sans-serif;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background-color: white; /* Fondo blanco */
-        box-shadow: 0px 3px 25px -9px gray; /* Sombra para destacar el navbar */
-    }
-
-    nav .logo img {
-        height: 50px;
-    }
-
-    nav ul {
-        list-style: none;
-        display: flex;
-        margin-left: auto;
-    }
-
-    nav ul li {
-        margin-left: 20px;
-    }
-
-    nav ul li a {
-        color: #33AFB9; /* Color azul del texto */
-        background-color: white; /* Fondo blanco por defecto */
-        text-decoration: none;
-        font-size: 18px;
-        padding: 10px 20px; /* Añade más espacio dentro del botón */
-        border-radius: 15px;
-        transition: background-color 0.3s, color 0.3s;
-        border: 1px solid #33AFB9; /* Bordes azules */
-    }
-
-    nav ul li a:hover {
-        background-color: #33AFB9; /* Fondo azul al hacer hover */
-        color: white; /* Texto blanco al hacer hover */
-    }
-
-    /* Estilos cuando un enlace está activo (seleccionado) */
-    nav ul li a.active {
-        background-color: #33AFB9; /* Fondo azul cuando está activo */
-        color: white; /* Letras blancas cuando está activo */
-    }
-
-    /* Ocultar menú en móvil y mostrar botón */
-    .menu-toggle {
-        display: none;
-        font-size: 30px;
-        color: black; /* Color del ícono de menú hamburguesa */
-        cursor: pointer;
-    }
+}
+@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+}
+@media only screen and (min-width: 1440px) {
     nav ul li {
         margin-left: 20px; /* Añade separación entre los botones */
     }
