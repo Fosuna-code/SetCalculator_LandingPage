@@ -1,4 +1,15 @@
 /*Header Desktop Styles*/ 
+/* Font face de noto sans local */
+@font-face {
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100 900;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url('../Fonts/NotoSans-Regular.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 
 @media only screen and (min-width: 1280px){
     * {
@@ -8,9 +19,19 @@
     }
 
     body {
-        font-family: Arial, sans-serif;
-                        
+        --h2-font-size: 2.25rem;
+        --primary-color: #33AFB9;      
   
+    }
+    h2{
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
+    p{
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1.125rem;
     }
     a{
         text-decoration: none ;
@@ -47,15 +68,15 @@
         padding: 10px 20px; /* Añade más espacio dentro del botón */
         border-radius: 15px;
         transition: background-color 0.3s, color 0.3s;
-        border: 1px solid #33AFB9; /* Bordes azules */
+        border: 1px solid var(--primary-color); /* Bordes azules */
     }
     nav ul li a:hover {
-        background-color: #33AFB9; /* Fondo azul al hacer hover */
+        background-color: var(--primary-color); /* Fondo azul al hacer hover */
         color: white; /* Texto blanco al hacer hover */
     }
     /* Estilos cuando un enlace está activo (seleccionado) */
     nav ul li a.active {
-        background-color: #33AFB9; /* Fondo azul cuando está activo */
+        background-color: var(--primary-color); /* Fondo azul cuando está activo */
         color: white; /* Letras blancas cuando está activo */
     }
     /* Ocultar menú en móvil y mostrar botón */
