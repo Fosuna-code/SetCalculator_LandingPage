@@ -1,9 +1,14 @@
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 @media only screen and (min-width: 1280px){
     .blogPost_main{
         display: flex;
-        width: 100wv;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     #Blogpost{
         margin-top: 50px;
@@ -24,9 +29,9 @@
         font-size: 0.875em;
         margin-left: 12px;
     }
-    #Blogpost main section{
+    #Blogpost main {
         width: 1151.012px;
-        height: 450px;
+        /* height: 450px; */
         margin-top: 30px;
         align-items: center;
         display: flex;
@@ -67,4 +72,104 @@
         margin-bottom: 50px;
     }
 
+    /*Commets section*/
+    .commets{
+        width: 80vw;
+        max-width: 1174px;
+        border-radius: 8px;
+        box-shadow: 0px 30px 60px 0px rgba(2, 80, 124, 0.15);
+        
+    }
+
+    /*Card comment component*/
+    .commets_card {
+        margin-inline: 1.2rem;
+        box-shadow: 0px 30px 60px 0px rgba(2, 80, 124, 0.15);
+        border-radius: 8px;
+        margin-bottom: 50px;
+    }
+    .comments_card_user:focus-within{
+        border: 1px solid #33AFB9;
+    }
+    .commets_card hr{
+        margin: 6px 20px;
+    }
+    .commets h2{
+        margin-left: 25px;
+        margin-top: 10px;
+        margin-bottom: 37px;
+    }
+   .card_img_input{
+        display: flex;
+        gap: 6px;
+   }
+   .card_img_input textarea{
+        flex-grow: 1;
+        border: none;
+        height: 56px;
+        padding: 16px 4px;
+        resize: none;
+   }
+   .card_img_input textarea:focus{
+     border: none;
+     overflow: auto;
+     outline: none;
+     box-shadow: none;
+   }
+    .card_format_cta{
+        display: flex;
+        justify-content: flex-end;
+        margin-inline: 16px;
+        margin-top:1rem;
+        padding-bottom: 1rem;
+    }
+    .card_format{
+        display: flex;
+        gap: 0.8rem;
+    }
+    .card_format button{
+        border: none;
+        background-color: white;
+        cursor: pointer;
+    }
+    .card_format_cta button{
+        background-color: white;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 28px;
+        color: white;
+        padding: 8px 20px;
+        border-radius: 8px;
+        background-color: #33AFB9;
+        cursor: pointer;
+        border: none;
+    }
+    .commets_card .comment_other{
+        flex-direction: column;
+    }
+    .comment_other .card_img_input{
+        display: flex;
+        flex-direction: column;
+    }
+    .card_img_input figure{
+        align-items: center;
+        gap: 12px;
+        font-weight: 600;
+        
+    }
+    .commet_content{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        margin: 0 70px;
+        padding-bottom: 1rem;
+    }
+    .card_img_input figure{
+        display: flex;
+        gap:8px;
+    }
+    .card_img_input legend{
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.40);
+    }
 }
