@@ -39,7 +39,6 @@
                 </nav>
             </header>
             <main>
-                <section>
                     <picture id="BlogPostImage">
                         <img src="./Style/img/blogImage.png" alt="Blog post image">
                     </picture>
@@ -59,9 +58,46 @@
                     <p class="postP">
                         En un conjunto, los elementos pueden ser personas, números, colores, letras, figuras, entre otros. Un elemento pertenece a un conjunto si está definido como incluido de algún modo dentro de él. 
                     </p>
-                </section>
             </main>
        </article> 
+       <section class="commets">
+           <h2>Comments</h2> 
+           <div class="commets_card comments_card_user">
+                <div class="card_img_input">
+                    <picture>
+                        <img src="./Style/img/userimg.png" alt="User profile image" 
+                        width="60"
+                        height="65">
+                    </picture>
+                    <textarea name="Comment input" id="card_input" placeholder="Type a comment"></textarea>
+                </div>
+                <hr>
+                <div class="card_format_cta">
+                    <div class="comment_button">
+                        <button >Comment</button>
+                    </div>
+                </div>
+           </div>
+           <template id="comment_template"> 
+                <div class="commets_card comment_other">
+                        <div class="card_img_input">
+                            <figure>
+                                <img src="./Style/img/userimg.png" alt="User profile image" 
+                                width="60"
+                                height="65">
+                                <figcaption>Other User name</figcaption>
+                            </figure>
+                            <div class="commet_content">
+                                <p>Best f**** article ever!</p>
+                                <legend>5 min ago</legend>
+                            </div>
+                        </div>
+                </div>
+            </template>
+        </section>
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
