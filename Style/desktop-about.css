@@ -66,6 +66,43 @@
     #history_section p, #mission_vision_section p{
         margin-bottom: 1.25em;
     }
+
+    .column-section-h2, #compromise_section h2{
+        margin-bottom: 1rem;
+    }
+    @media only screen and (min-width: 1920px) {
+        /*increased font size for higher resolutions*/
+        h2{
+            font-size: 3.5rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        nav{
+            display: none;
+        }
+        /*the content will be now on a single column rather than 2*/
+        #about-container{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+         /*added a mandatory min height to prevent the sections overlapping*/
+        #compromise_section {
+            min-height: 75vh;
+        }
+        /*added a mandatory min height to prevent the sections overlapping*/
+        #mission_vision_section, #history_section {
+            min-height: 80vh;
+        }
+        /*made the text centered rather than having different margins depending on the location*/
+        #history_section_text, #mission_vision_section_text, #compromise_text{
+            margin: 7.5vw auto auto auto;
+            width: 85vw;
+        }
+
     #history_section h2, #mission_vision_section h2, #compromise_section h2{
         margin-bottom: 1em;
     }
