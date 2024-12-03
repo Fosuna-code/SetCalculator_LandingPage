@@ -79,6 +79,9 @@
         }
     }
     @media only screen and (max-width: 768px) {
+        nav{
+            display: none;
+        }
         /*the content will be now on a single column rather than 2*/
         #about-container{
             display: flex;
