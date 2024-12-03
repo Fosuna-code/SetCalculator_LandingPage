@@ -1,0 +1,466 @@
+:root{
+
+}
+/*Header Desktop Styles*/
+@media only screen and (min-width: 768px) {
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    p{
+        font-size: 30px;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-image:
+                radial-gradient(circle, rgba(247, 147, 76, 0.2) 170px, transparent 101px),
+                radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
+                radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
+                radial-gradient(circle, rgba(159, 107, 160, 0.2) 190px, transparent 101px),
+                radial-gradient(circle, rgba(159, 107, 160, 0.2) 155px, transparent 101px),
+                radial-gradient(circle, rgba(159, 107, 160, 0.2) 110px, transparent 101px),
+                radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
+                radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px);
+
+
+        background-position: 50vh -15vw,
+        20vh 10vw,
+        19vh -39vw,
+        50vh 50vw,
+        -35vh -35vw,
+        -45vh 5vw,
+        -25vh 25vw,
+        50vh 30vw;
+        background-repeat: no-repeat;
+
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: white; /* Fondo blanco */
+        box-shadow: 0px 3px 25px -9px gray; /* Sombra para destacar el navbar */
+    }
+    nav .logo img {
+        height: 50px;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin-left: auto;
+    }
+    nav ul li {
+        margin-left: 20px;
+    }
+    nav ul li a {
+        color: #33AFB9; /* Color azul del texto */
+        background-color: white; /* Fondo blanco por defecto */
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 20px; /* Añade más espacio dentro del botón */
+        border-radius: 15px;
+        transition: background-color 0.3s, color 0.3s;
+        border: 1px solid #33AFB9; /* Bordes azules */
+    }
+    nav ul li a:hover {
+        background-color: #33AFB9; /* Fondo azul al hacer hover */
+        color: white; /* Texto blanco al hacer hover */
+    }
+    /* Estilos cuando un enlace está activo (seleccionado) */
+    nav ul li a.active {
+        background-color: #33AFB9; /* Fondo azul cuando está activo */
+        color: white; /* Letras blancas cuando está activo */
+    }
+    /* Ocultar menú en móvil y mostrar botón */
+    .menu-toggle {
+        display: none;
+        font-size: 30px;
+        color: black; /* Color del ícono de menú hamburguesa */
+        cursor: pointer;
+    }
+    .button {
+        background-color: #4bb4b4;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .containerTH {
+        text-align: center;
+        padding: 50px;
+    }
+    .footer {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-content span {
+        font-size: 25px;
+        color: #555;
+    }
+
+    .footer-columns {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: left;
+    }
+
+    .column a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #007BFF;
+        transition: color 0.3s;
+    }
+
+    .column a:hover {
+        color: #0056b3;
+    }
+    .Formulario {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .Formulario h2{
+        font-size: 3em;
+    }
+
+    .Formulario p{
+        margin-top: 40px;
+        margin-bottom: 44px;
+    }
+
+    .form-p {
+        text-align: center;
+    }
+
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .form-group label{
+        font-size: 1.25em;
+    }
+
+    .form-group textarea{
+        height: 97px;
+    }
+
+    .form-group .areaWInput{
+        max-width: 1171px;
+        width: 65vw;
+        margin-bottom: 44px;
+        border-radius: 4px;
+        border: 1px solid #33AFB9;
+    }
+
+    .form-group input{
+        height: 45px;
+    }
+}
+
+@media only screen and (min-width: 1280px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-image:
+                radial-gradient(circle, rgba(247, 147, 76, 0.2) 170px, transparent 101px),
+        radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
+                radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
+        radial-gradient(circle, rgba(159, 107, 160, 0.2) 190px, transparent 101px),
+        radial-gradient(circle, rgba(159, 107, 160, 0.2) 155px, transparent 101px),
+        radial-gradient(circle, rgba(159, 107, 160, 0.2) 110px, transparent 101px),
+                radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
+                radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px);
+
+
+        background-position: 50vh -15vw,
+        20vh 10vw,
+        19vh -39vw,
+        50vh 50vw,
+        -35vh -35vw,
+        -45vh 5vw,
+        -25vh 25vw,
+        50vh 30vw;
+        background-repeat: no-repeat;
+
+    }
+    a{
+        text-decoration: none ;
+    }
+    picture{
+       margin:0;
+       padding: 0; 
+       display: block;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: white; /* Fondo blanco */
+        box-shadow: 0px 3px 25px -9px gray; /* Sombra para destacar el navbar */
+    }
+    nav .logo img {
+        height: 50px;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin-left: auto;
+    }
+    nav ul li {
+        margin-left: 20px;
+    }
+    nav ul li a {
+        color: #33AFB9; /* Color azul del texto */
+        background-color: white; /* Fondo blanco por defecto */
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 20px; /* Añade más espacio dentro del botón */
+        border-radius: 15px;
+        transition: background-color 0.3s, color 0.3s;
+        border: 1px solid #33AFB9; /* Bordes azules */
+    }
+    nav ul li a:hover {
+        background-color: #33AFB9; /* Fondo azul al hacer hover */
+        color: white; /* Texto blanco al hacer hover */
+    }
+    /* Estilos cuando un enlace está activo (seleccionado) */
+    nav ul li a.active {
+        background-color: #33AFB9; /* Fondo azul cuando está activo */
+        color: white; /* Letras blancas cuando está activo */
+    }
+    /* Ocultar menú en móvil y mostrar botón */
+    .menu-toggle {
+        display: none;
+        font-size: 30px;
+        color: black; /* Color del ícono de menú hamburguesa */
+        cursor: pointer;
+    }
+    .button {
+        background-color: #4bb4b4;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .containerTH {
+        text-align: center;
+        padding: 50px;
+    }
+    .footer {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-content span {
+        font-size: 14px;
+        color: #555;
+    }
+
+    .footer-columns {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: left;
+    }
+
+    .column a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #007BFF;
+        transition: color 0.3s;
+    }
+
+    .column a:hover {
+        color: #0056b3;
+    }
+    .Formulario {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .Formulario h2{
+        font-size: 3em;
+    }
+
+    .Formulario p{
+        font-size: 1.25em;
+        margin-top: 40px;
+        margin-bottom: 44px;
+    }
+
+    .form-p {
+        text-align: center;
+    }
+
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .form-group label{
+        font-size: 1.25em;
+    }
+
+    .form-group textarea{
+        height: 97px;
+    }
+
+    .form-group .areaWInput{
+        max-width: 1171px;
+        width: 100vw;
+        margin-bottom: 44px;
+        border-radius: 4px;
+        border: 1px solid #33AFB9;
+    }
+
+    .form-group input{
+        height: 45px;
+    }
+
+
+
+}    
+
+@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+}
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+}
+@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+}
+@media only screen and (min-width: 1440px) {
+    nav ul li {
+        margin-left: 20px; /* Añade separación entre los botones */
+    }
+
+}
+@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-image: radial-gradient(circle, rgba(247, 147, 76, 0.2) 140px, transparent 101px),
+        radial-gradient(circle, rgba(247, 147, 76, 0.2) 190px, transparent 101px),
+        radial-gradient(circle, rgba(159, 107, 160, 0.2) 190px, transparent 101px),
+        radial-gradient(circle, rgba(159, 107, 160, 0.2) 155px, transparent 101px);
+        background-position: 2vh -15vw, 93vh -7vw, 50vh 50vw, -72vh 9vw;
+        background-repeat: no-repeat;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: white; /* Fondo blanco */
+        box-shadow: 0px 3px 25px -9px gray; /* Sombra para destacar el navbar */
+    }
+
+    nav .logo img {
+        height: 50px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin-left: auto;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        color: #33AFB9; /* Color azul del texto */
+        background-color: white; /* Fondo blanco por defecto */
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 20px; /* Añade más espacio dentro del botón */
+        border-radius: 15px;
+        transition: background-color 0.3s, color 0.3s;
+        border: 1px solid #33AFB9; /* Bordes azules */
+    }
+
+    nav ul li a:hover {
+        background-color: #33AFB9; /* Fondo azul al hacer hover */
+        color: white; /* Texto blanco al hacer hover */
+    }
+
+    /* Estilos cuando un enlace está activo (seleccionado) */
+    nav ul li a.active {
+        background-color: #33AFB9; /* Fondo azul cuando está activo */
+        color: white; /* Letras blancas cuando está activo */
+    }
+
+    /* Ocultar menú en móvil y mostrar botón */
+    .menu-toggle {
+        display: none;
+        font-size: 30px;
+        color: black; /* Color del ícono de menú hamburguesa */
+        cursor: pointer;
+    }
+
+}
+
