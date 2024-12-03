@@ -1,4 +1,28 @@
 /*Header Desktop Styles*/ 
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/OpenSans_Condensed-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/NotoSans_Condensed-Regular.woff2') format('woff2');
+}
+:root{
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Noto Sans", sans-serif;
+  /* Escala modular de tipografía con clamp para hacerla responsive */
+  --font-size-xs: clamp(0.875rem, 1vw + 0.5rem, 1rem);  /* 14px - 16px */
+  --font-size-sm: clamp(1rem, 1.2vw + 0.5rem, 1.25rem);  /* 16px - 20px */
+  --font-size-md: clamp(1.25rem, 1.5vw + 0.5rem, 1.5rem); /* 20px - 24px */
+  --font-size-lg: clamp(1.5rem, 2vw + 0.5rem, 2rem);     /* 24px - 32px */
+  --font-size-xl: clamp(2rem, 2.5vw + 0.5rem, 2.5rem);   /* 32px - 40px */
+  --font-size-xxl: clamp(2.5rem, 3vw + 0.5rem, 3.5rem);  /* 40px - 56px */
+
+}
 
 @media only screen and (min-width: 1280px){
     * {
@@ -20,7 +44,7 @@
        padding: 0; 
        display: block;
     }
-    nav {
+    .main_header  nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -28,18 +52,18 @@
         background-color: white; /* Fondo blanco */
         box-shadow: 0px 3px 25px -9px gray; /* Sombra para destacar el navbar */
     }
-    nav .logo img {
+    .main_header nav .logo img {
         height: 50px;
     }
-    nav ul {
+    .main_header nav ul {
         list-style: none;
         display: flex;
         margin-left: auto;
     }
-    nav ul li {
+    .main_header nav ul li {
         margin-left: 20px;
     }
-    nav ul li a {
+    .main_header  nav ul li a {
         color: #33AFB9; /* Color azul del texto */
         background-color: white; /* Fondo blanco por defecto */
         text-decoration: none;
@@ -49,12 +73,12 @@
         transition: background-color 0.3s, color 0.3s;
         border: 1px solid #33AFB9; /* Bordes azules */
     }
-    nav ul li a:hover {
+    .main_header nav ul li a:hover {
         background-color: #33AFB9; /* Fondo azul al hacer hover */
         color: white; /* Texto blanco al hacer hover */
     }
     /* Estilos cuando un enlace está activo (seleccionado) */
-    nav ul li a.active {
+    .main_header nav ul li a.active {
         background-color: #33AFB9; /* Fondo azul cuando está activo */
         color: white; /* Letras blancas cuando está activo */
     }
@@ -73,8 +97,8 @@
 }
 @media only screen and (min-width: 1920px) and (max-width: 2559px) {
 }
-@media only screen and (min-width: 1440px) {
-    nav ul li {
-        margin-left: 20px; /* Añade separación entre los botones */
-    }
-}
+/* @media only screen and (min-width: 1440px) {
+    /* nav ul li {
+        margin-left: 20px; /* Añade separación entre los botones 
+    } 
+} */
