@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    /*Not backgorund image form other pages are neccesary*/
     background-image: none;
 }
     .blogPost_main{
@@ -40,15 +41,13 @@ body{
     }
     #Blogpost main {
         max-width: 1151.012px;
-        /* height: 450px; */
         margin-top: 30px;
         align-items: center;
         display: flex;
         flex-direction: column;
     }
     #BlogPostHeader h2{
-        color: #000;
-        font-size: 2.25em;
+        font-size: var(--font-size-xl);
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -61,10 +60,9 @@ body{
         margin-bottom: 80px;
     }
     .postP, .postP_ul li{
-        color: #000;
         text-align: justify;
-        font-family: "Noto Sans";
-        font-size: 25px;
+        font-family: var(--font-secondary);
+        font-size: var(--font-size-md);
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -96,7 +94,7 @@ body{
         margin-bottom: 50px;
     }
     .comments_card_user:focus-within{
-        border: 1px solid #33AFB9;
+        border: 1px solid var(--primary-color);
     }
     .commets_card hr{
         margin: 6px 20px;
@@ -171,12 +169,15 @@ body{
         margin: 0 70px;
         padding-bottom: 1rem;
     }
+    .commet_content p{
+        font-size: var(--font-size-md);
+    }
     .card_img_input figure{
         display: flex;
         gap:8px;
     }
     .card_img_input legend{
-        font-size: 14px;
+        font-size: var(--font-size-xs);
         color: rgba(0, 0, 0, 0.40);
     }
 
@@ -197,7 +198,14 @@ body{
         #BlogPostimg {
             max-width: 100%;
         }
-        .main_header{
-            display: none;
+        #userName::after{
+            content: "";
+            font-size: 0;
+        }
+        #BlogPostHeader nav ul{
+            gap: 0;
+        }
+        #BlogPostHeader li a{
+            padding: 0;
         }
     }
