@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: none;
+}
     .blogPost_main{
         display: flex;
         justify-content: center;
@@ -60,7 +63,6 @@
     .postP, .postP_ul li{
         color: #000;
         text-align: justify;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-family: "Noto Sans";
         font-size: 25px;
         font-style: normal;
@@ -84,8 +86,6 @@
         width: 80vw;
         max-width: 1174px;
         border-radius: 8px;
-        box-shadow: 0px 30px 60px 0px rgba(2, 80, 124, 0.15);
-        
     }
 
     /*Card comment component*/

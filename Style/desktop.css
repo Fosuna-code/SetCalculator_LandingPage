@@ -1,6 +1,6 @@
 
 /*Header Desktop Styles*/
-@media only screen and (min-width: 300px) and (max-width: 768px) {
+@media only screen and (max-width: 1279px) {
     h1 {
         font-size: 35px;
     }
