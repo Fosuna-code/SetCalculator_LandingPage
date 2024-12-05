@@ -1,28 +1,28 @@
-:root{
 
-}
 /*Header Desktop Styles*/
-@media only screen and (min-width: 768px) {
-    h1{
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+    h1 {
         font-size: 35px;
     }
-    h2{
+
+    h2 {
         font-size: 35px;
     }
-    p{
+
+    p {
         font-size: 30px;
     }
+
     body {
         font-family: Arial, sans-serif;
-        background-image:
-                radial-gradient(circle, rgba(247, 147, 76, 0.2) 170px, transparent 101px),
-                radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
-                radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
-                radial-gradient(circle, rgba(159, 107, 160, 0.2) 190px, transparent 101px),
-                radial-gradient(circle, rgba(159, 107, 160, 0.2) 155px, transparent 101px),
-                radial-gradient(circle, rgba(159, 107, 160, 0.2) 110px, transparent 101px),
-                radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
-                radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px);
+        background-image: radial-gradient(circle, rgba(247, 147, 76, 0.2) 170px, transparent 101px),
+        radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
+        radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
+        radial-gradient(circle, rgba(159, 107, 160, 0.2) 190px, transparent 101px),
+        radial-gradient(circle, rgba(159, 107, 160, 0.2) 155px, transparent 101px),
+        radial-gradient(circle, rgba(159, 107, 160, 0.2) 110px, transparent 101px),
+        radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
+        radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px);
 
 
         background-position: 50vh -15vw,
@@ -36,6 +36,7 @@
         background-repeat: no-repeat;
 
     }
+
     nav {
         display: flex;
         justify-content: space-between;
@@ -44,17 +45,21 @@
         background-color: white; /* Fondo blanco */
         box-shadow: 0px 3px 25px -9px gray; /* Sombra para destacar el navbar */
     }
+
     nav .logo img {
         height: 50px;
     }
+
     nav ul {
         list-style: none;
         display: flex;
         margin-left: auto;
     }
+
     nav ul li {
         margin-left: 20px;
     }
+
     nav ul li a {
         color: #33AFB9; /* Color azul del texto */
         background-color: white; /* Fondo blanco por defecto */
@@ -65,15 +70,18 @@
         transition: background-color 0.3s, color 0.3s;
         border: 1px solid #33AFB9; /* Bordes azules */
     }
+
     nav ul li a:hover {
         background-color: #33AFB9; /* Fondo azul al hacer hover */
         color: white; /* Texto blanco al hacer hover */
     }
+
     /* Estilos cuando un enlace está activo (seleccionado) */
     nav ul li a.active {
         background-color: #33AFB9; /* Fondo azul cuando está activo */
         color: white; /* Letras blancas cuando está activo */
     }
+
     /* Ocultar menú en móvil y mostrar botón */
     .menu-toggle {
         display: none;
@@ -81,6 +89,7 @@
         color: black; /* Color del ícono de menú hamburguesa */
         cursor: pointer;
     }
+
     .button {
         background-color: #4bb4b4;
         color: white;
@@ -91,10 +100,12 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
+
     .containerTH {
         text-align: center;
         padding: 50px;
     }
+
     .footer {
         background-color: #f0f0f0;
         padding: 20px;
@@ -137,6 +148,7 @@
     .column a:hover {
         color: #0056b3;
     }
+
     .Formulario {
         display: flex;
         align-content: center;
@@ -145,11 +157,11 @@
         flex-direction: column;
     }
 
-    .Formulario h2{
+    .Formulario h2 {
         font-size: 3em;
     }
 
-    .Formulario p{
+    .Formulario p {
         margin-top: 40px;
         margin-bottom: 44px;
     }
@@ -158,22 +170,22 @@
         text-align: center;
     }
 
-    .form-group{
+    .form-group {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
     }
 
-    .form-group label{
+    .form-group label {
         font-size: 1.25em;
     }
 
-    .form-group textarea{
+    .form-group textarea {
         height: 97px;
     }
 
-    .form-group .areaWInput{
+    .form-group .areaWInput {
         max-width: 1171px;
         width: 65vw;
         margin-bottom: 44px;
@@ -181,12 +193,37 @@
         border: 1px solid #33AFB9;
     }
 
-    .form-group input{
+    .form-group input {
         height: 45px;
     }
 }
+/*Header Desktop Styles*/ 
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/OpenSans_Condensed-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/NotoSans_Condensed-Regular.woff2') format('woff2');
+}
+:root{
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Noto Sans", sans-serif;
+  /* Escala modular de tipografía con clamp para hacerla responsive */
+  --font-size-xs: clamp(0.875rem, 1vw + 0.5rem, 1rem);  /* 14px - 16px */
+  --font-size-sm: clamp(1rem, 1.2vw + 0.5rem, 1.25rem);  /* 16px - 20px */
+  --font-size-md: clamp(1.25rem, 1.5vw + 0.5rem, 1.5rem); /* 20px - 24px */
+  --font-size-lg: clamp(1.5rem, 2vw + 0.5rem, 2rem);     /* 24px - 32px */
+  --font-size-xl: clamp(2rem, 2.5vw + 0.5rem, 2.5rem);   /* 32px - 40px */
+  --font-size-xxl: clamp(2.5rem, 3vw + 0.5rem, 3.5rem);  /* 40px - 56px */
 
-@media only screen and (min-width: 1280px){
+}
+
+@media only screen and (min-width: 1280px) {
     * {
         margin: 0;
         padding: 0;
@@ -195,15 +232,14 @@
 
     body {
         font-family: Arial, sans-serif;
-        background-image:
-                radial-gradient(circle, rgba(247, 147, 76, 0.2) 170px, transparent 101px),
+        background-image: radial-gradient(circle, rgba(247, 147, 76, 0.2) 170px, transparent 101px),
         radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
-                radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
+        radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
         radial-gradient(circle, rgba(159, 107, 160, 0.2) 190px, transparent 101px),
         radial-gradient(circle, rgba(159, 107, 160, 0.2) 155px, transparent 101px),
         radial-gradient(circle, rgba(159, 107, 160, 0.2) 110px, transparent 101px),
-                radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
-                radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px);
+        radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px),
+        radial-gradient(circle, rgba(247, 147, 76, 0.2) 110px, transparent 101px);
 
 
         background-position: 50vh -15vw,
@@ -216,16 +252,20 @@
         50vh 30vw;
         background-repeat: no-repeat;
 
+
     }
-    a{
-        text-decoration: none ;
+
+    a {
+        text-decoration: none;
     }
-    picture{
-       margin:0;
-       padding: 0; 
-       display: block;
+
+    picture {
+        margin: 0;
+        padding: 0;
+        display: block;
     }
-    nav {
+
+    .main_header nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -233,18 +273,30 @@
         background-color: white; /* Fondo blanco */
         box-shadow: 0px 3px 25px -9px gray; /* Sombra para destacar el navbar */
     }
+
     nav .logo img {
         height: 50px;
     }
-    nav ul {
+
+    .main_header nav .logo img {
+        height: 50px;
+    }
+
+    .main_header nav ul {
         list-style: none;
         display: flex;
         margin-left: auto;
     }
+
     nav ul li {
         margin-left: 20px;
     }
-    nav ul li a {
+
+    .main_header nav ul li {
+        margin-left: 20px;
+    }
+
+    .main_header nav ul li a {
         color: #33AFB9; /* Color azul del texto */
         background-color: white; /* Fondo blanco por defecto */
         text-decoration: none;
@@ -254,15 +306,18 @@
         transition: background-color 0.3s, color 0.3s;
         border: 1px solid #33AFB9; /* Bordes azules */
     }
-    nav ul li a:hover {
+
+    .main_header nav ul li a:hover {
         background-color: #33AFB9; /* Fondo azul al hacer hover */
         color: white; /* Texto blanco al hacer hover */
     }
+
     /* Estilos cuando un enlace está activo (seleccionado) */
-    nav ul li a.active {
+    .main_header nav ul li a.active {
         background-color: #33AFB9; /* Fondo azul cuando está activo */
         color: white; /* Letras blancas cuando está activo */
     }
+
     /* Ocultar menú en móvil y mostrar botón */
     .menu-toggle {
         display: none;
@@ -270,6 +325,7 @@
         color: black; /* Color del ícono de menú hamburguesa */
         cursor: pointer;
     }
+
     .button {
         background-color: #4bb4b4;
         color: white;
@@ -280,10 +336,12 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
+
     .containerTH {
         text-align: center;
         padding: 50px;
     }
+
     .footer {
         background-color: #f0f0f0;
         padding: 20px;
@@ -326,6 +384,7 @@
     .column a:hover {
         color: #0056b3;
     }
+
     .Formulario {
         display: flex;
         align-content: center;
@@ -334,11 +393,11 @@
         flex-direction: column;
     }
 
-    .Formulario h2{
+    .Formulario h2 {
         font-size: 3em;
     }
 
-    .Formulario p{
+    .Formulario p {
         font-size: 1.25em;
         margin-top: 40px;
         margin-bottom: 44px;
@@ -348,22 +407,22 @@
         text-align: center;
     }
 
-    .form-group{
+    .form-group {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
     }
 
-    .form-group label{
+    .form-group label {
         font-size: 1.25em;
     }
 
-    .form-group textarea{
+    .form-group textarea {
         height: 97px;
     }
 
-    .form-group .areaWInput{
+    .form-group .areaWInput {
         max-width: 1171px;
         width: 100vw;
         margin-bottom: 44px;
@@ -371,26 +430,35 @@
         border: 1px solid #33AFB9;
     }
 
-    .form-group input{
+    .form-group input {
         height: 45px;
     }
 
-
-
-}    
-
-@media only screen and (min-width: 1280px) and (max-width: 1439px) {
-}
-@media only screen and (min-width: 1440px) and (max-width: 1919px) {
-}
-@media only screen and (min-width: 1920px) and (max-width: 2559px) {
-}
-@media only screen and (min-width: 1440px) {
-    nav ul li {
-        margin-left: 20px; /* Añade separación entre los botones */
+    .iztext {
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-start; */
+        justify-content: center;
+        text-align: center;
+        width: 600px;
+        text-align: center;
     }
 
+    .dertext {
+        padding: 100px;
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+    }
+
+    .ultitext {
+        width: 600px;
+
+    }
 }
+
+
 @media only screen and (min-width: 1920px) and (max-width: 2559px) {
     * {
         margin: 0;
