@@ -1,17 +1,26 @@
 
 /*About us section*/
-
+h2 {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-xl);
+}
+p{
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-md);
+    line-height: 2.5rem; 
+    letter-spacing: 0.01688rem;
+    letter-spacing: 0.01688rem; /*added to avoid feeligs that the letters of the font are too close one to another*/
+}
 #about-container{
     width: 100%;
-    height: 80%;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 40% 60%;
     grid-template-columns: repeat(2, 1fr);
     text-align: justify;
 }
 #compromise_section{
     width: 100%;
-    height: 100%;
+    min-height: 125vh;
     margin: 7.5vh 0 0 0;
     grid-column: 1/3;
     grid-row: 1/2;
@@ -19,18 +28,19 @@
 #compromise_text{
     display: block;
     width: 90%;
-    height: 30%;
+    height: 70%;
     margin: 7.5vh auto auto auto;
 }
 #img-container{
     display: flex;
     width: 100%;
-    height: 50%;
+    height: 30%;
     align-items: center;
     justify-content: center;
 }
 #compromise_img{
     width: 70%;
+    height: 100%;
 }
 #history_section{
     grid-column: 1/2;
@@ -45,27 +55,25 @@
     flex-flow: column;
 }
 #history_section_text{
+    /*as there are two columns it makes the text 5% away from the center and 10% away from the screen border*/
     margin: 0 5% 0 10%;
 }
 #mission_vision_section_text{
+    /*as there are two columns it makes the text 5% away from the center and 10% away from the screen border, this time with the right-sided section*/
     margin: 0 10% 0 5%;
-}
-#history_section_text, #mission_vision_section_text{
-    width: 85%;
 }
 #history_section, #mission_vision_section {
     height: 100%;
 }
-#history_section h2, #mission_vision_section h2, #history_section p, #mission_vision_section p{
+.column-section-h2, .column-section-txt{
     width: 100%;
 }
 .mission-vision{
     font-weight: bold;
 }
-#history_section p, #mission_vision_section p{
+.column-section-txt{
     margin-bottom: 1.25em;
 }
-
 .column-section-h2, #compromise_section h2{
     margin-bottom: 1rem;
 }
@@ -79,34 +87,23 @@
     }
 }
 @media only screen and (max-width: 768px) {
-    nav {
-        display: none;
-    }
-
     /*the content will be now on a single column rather than 2*/
-    #about-container {
+    #about-container{
         display: flex;
         flex-flow: column;
         align-items: center;
     }
-
-    /*added a mandatory min height to prevent the sections overlapping*/
+     /*added a mandatory min height to prevent the sections overlapping*/
     #compromise_section {
         min-height: 75vh;
     }
-
     /*added a mandatory min height to prevent the sections overlapping*/
     #mission_vision_section, #history_section {
         min-height: 80vh;
     }
-
     /*made the text centered rather than having different margins depending on the location*/
-    #history_section_text, #mission_vision_section_text, #compromise_text {
+    #history_section_text, #mission_vision_section_text, #compromise_text{
         margin: 7.5vw auto auto auto;
         width: 85vw;
-    }
-
-    #history_section h2, #mission_vision_section h2, #compromise_section h2 {
-        margin-bottom: 1em;
     }
 }
