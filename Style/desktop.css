@@ -196,6 +196,12 @@
     .form-group input {
         height: 45px;
     }
+     .form-group label{
+        padding-bottom: 8px;
+    }
+    .form-group input, .form-group textarea{
+        padding: 4px;
+    }
 }
 /*Header Desktop Styles*/ 
 @font-face {
@@ -456,6 +462,15 @@
         width: 600px;
 
     }
+     .form-group label{
+        padding-bottom: 8px;
+    }
+    .form-group input, .form-group textarea{
+        padding-inline: 4px;
+    }
+    .form-group textarea{
+        padding: 8px;
+    }
 }
 
 
@@ -530,5 +545,14 @@
         cursor: pointer;
     }
 
+    .form-group label{
+        padding-bottom: 8px;
+    }
+    .form-group input , .form-group textarea{
+        padding-inline: 4px;
+    }
+    .form-group textarea{
+        padding: 8px;
+    }
 }
 
