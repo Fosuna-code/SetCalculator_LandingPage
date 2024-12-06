@@ -269,6 +269,7 @@ nav .logo img {
         background-color: var(--complement);
     }
     .menu-toggle { 
+        display: block;
         font-size: 30px; 
         color: black; /* Color del ícono de menú movil*/ 
         cursor: pointer; 
