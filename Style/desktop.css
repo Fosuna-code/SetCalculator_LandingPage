@@ -125,13 +125,16 @@
         color: var(--complement); /* Letras blancas cuando está activo */
     }
 
-    /* Ocultar menú en móvil y mostrar botón */
-    .menu-toggle {
-        font-size: 30px;
-        color: black; /* Color del ícono de menú hamburguesa */
-        cursor: pointer;
-        padding-right: 4px;
-        z-index: 101;
+    /* Ocultar menú en móvil y mostrar botón */ 
+    .menu-toggle { 
+        font-size: 30px; 
+        color: black; /* Color del ícono de menú hamburguesa */ 
+        cursor: pointer; 
+        padding-right: 4px; 
+        z-index: 101; 
+    } 
+    .menu-toggle a{ 
+        text-decoration: none; color: inherit; 
     }
     .header_list{
         display: none;
@@ -178,7 +181,11 @@
 
     .containerTH {
         text-align: center;
-        padding: 50px;
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .footer {
@@ -286,7 +293,6 @@
         align-items: center;
         height: 100vh;
     }
-    
 }
 
 
