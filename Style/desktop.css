@@ -51,9 +51,9 @@
 
     p {
         font-family: var(--font-secondary);
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-md);
     }
-@media only screen and (max-width: 1279px) {
+@media only screen and (max-width: 768px) {
   
     body {
         font-family: var(--font-secondary);
@@ -104,7 +104,7 @@
     }
 
     nav ul li a {
-        color: var(---primary-color); /* Color azul del texto */
+        color: var(--primary-color); /* Color azul del texto */
         background-color: var(--complement); /* Fondo blanco por defecto */
         text-decoration: none;
         font-size: 18px;
@@ -145,7 +145,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 35px;
         z-index: 100;
         top: 50%;
         left: 50%;
@@ -237,7 +237,8 @@
     }
 
     .Formulario p {
-        margin-bottom: 44px;
+        margin-bottom: 8px;
+        font-size: var(--font-size-xs);
     }
 
     .form-p {
@@ -262,9 +263,9 @@
     .form-group .areaWInput {
         max-width: 1171px;
         width: 65vw;
-        margin-bottom: 44px;
+        margin-bottom: 8px;
         border-radius: 4px;
-        border: 1px solid var(---primary-color);
+        border: 1px solid var(--primary-color);
     }
 
     .form-group input {
@@ -276,10 +277,20 @@
     .form-group input, .form-group textarea{
         padding: 4px;
     }
+    .arreglofi{
+        text-align: center;
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
 }
 
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 770px) {
     * {
         margin: 0;
         padding: 0;
@@ -360,7 +371,7 @@
         padding: 10px 20px; /* Añade más espacio dentro del botón */
         border-radius: 15px;
         transition: background-color 0.3s, color 0.3s;
-        border: 1px solid var(---primary-color); /* Bordes azules */
+        border: 1px solid var(--primary-color); /* Bordes azules */
     }
 
     .main_header nav ul li a:hover {
@@ -455,7 +466,6 @@
 
     .Formulario p {
         font-size: 1.25em;
-        margin-bottom: 44px;
     }
 
     .form-p {
@@ -479,7 +489,7 @@
 
     /* Cambiar borde si el input es válido */
     .form-group .areaWInput:valid {
-        border-color: green;
+        border-color: var(--primary-color);
     }
     .form-group textarea {
         height: 97px;
@@ -487,10 +497,10 @@
 
     .form-group .areaWInput {
         max-width: 1171px;
-        width: 100vw;
-        margin-bottom: 44px;
+        width: 90vw;
+        margin-bottom: 12px;
         border-radius: 4px;
-        border: 1px solid var(---primary-color);
+        border: 1px solid var(--primary-color);
     }
 
     .form-group input {
@@ -527,6 +537,11 @@
     .form-group textarea{
         padding: 8px;
     }
+    .paddingHome{
+        padding: 100px;
+    }
+
+
 }
 
 
@@ -572,24 +587,24 @@
     }
 
     nav ul li a {
-        color: var(---primary-color); /* Color azul del texto */
+        color: var(--primary-color); /* Color azul del texto */
         background-color: var(--complement); /* Fondo blanco por defecto */
         text-decoration: none;
         font-size: 18px;
         padding: 10px 20px; /* Añade más espacio dentro del botón */
         border-radius: 15px;
         transition: background-color 0.3s, color 0.3s;
-        border: 1px solid var(---primary-color); /* Bordes azules */
+        border: 1px solid var(--primary-color); /* Bordes azules */
     }
 
     nav ul li a:hover {
-        background-color: var(---primary-color); /* Fondo azul al hacer hover */
+        background-color: var(--primary-color); /* Fondo azul al hacer hover */
         color: var(--complement); /* Texto blanco al hacer hover */
     }
 
     /* Estilos cuando un enlace está activo (seleccionado) */
     nav ul li a.active {
-        background-color: var(---primary-color); /* Fondo azul cuando está activo */
+        background-color: var(--primary-color); /* Fondo azul cuando está activo */
         color: var(--complement); /* Letras blancas cuando está activo */
     }
 
@@ -609,6 +624,9 @@
     }
     .form-group textarea{
         padding: 8px;
+    }
+    .paddingHome{
+        padding: 100px;
     }
 }
 
