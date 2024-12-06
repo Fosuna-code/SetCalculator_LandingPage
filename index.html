@@ -67,17 +67,17 @@
     
     <div class="form-group">
         <label for="name">Name</label>
-        <input class="areaWInput" type="text" id="UserName" name="name" pattern="[A-Za-zÁáÉéÍíÓóÚúÑñ\s]{3,}" required>
+        <input class="areaWInput" type="text" id="name" name="name" pattern="[A-Za-zÁáÉéÍíÓóÚúÑñ\s]{3,}" required autocomplete="">
     </div>
     
     <div class="form-group">
         <label for="email">Email</label>
-        <input class="areaWInput" type="email" id="email" name="email" required>
+        <input class="areaWInput" type="email" id="email" name="email" required autocomplete="">
     </div>
 
     <div class="form-group">
         <label for="message">Message</label>
-        <textarea class="areaWInput" name="message-area" id="message-area" rows="4" pattern="[A-Za-zÁáÉéÍíÓóÚúÑñ\s]{3,}" required></textarea>
+        <textarea class="areaWInput" name="message-area" id="message" rows="4" pattern="[A-Za-zÁáÉéÍíÓóÚúÑñ\s]{3,}" required></textarea>
     </div>
     <div>
         <input type="submit"  class="button" value="Send form">
