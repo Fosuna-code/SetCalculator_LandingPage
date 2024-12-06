@@ -406,7 +406,12 @@
 
     .containerTH {
         text-align: center;
-        padding: 50px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 90px;
     }
 
     .footer {
@@ -508,7 +513,6 @@
     }
 
     .iztext {
-        padding: 100px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -518,7 +522,6 @@
     }
 
     .dertext {
-        padding: 100px;
         display: flex;
         justify-content: flex-end;
         text-align: center;
@@ -537,96 +540,16 @@
     .form-group textarea{
         padding: 8px;
     }
-    .paddingHome{
-        padding: 100px;
+    .ultitext p {
+        font-size: var(--font-size-sm);
     }
-
-
+    .learn_about{
+        display: flex;
+        justify-content: center;
+        max-width: 1280px;
+        height: 100vh;
+        margin: auto;
+    }
 }
 
-
-@media only screen and (min-width: 1920px) and (max-width: 2559px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: Arial, sans-serif;
-        background-image: radial-gradient(circle, rgba(247, 147, 76, 0.2) 140px, transparent 101px),
-        radial-gradient(circle, rgba(247, 147, 76, 0.2) 190px, transparent 101px),
-        radial-gradient(circle, rgba(159, 107, 160, 0.2) 190px, transparent 101px),
-        radial-gradient(circle, rgba(159, 107, 160, 0.2) 155px, transparent 101px);
-        background-position: 2vh -15vw, 93vh -7vw, 50vh 50vw, -72vh 9vw;
-        background-repeat: no-repeat;
-
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background-color: white; /* Fondo blanco */
-        box-shadow: 0px 3px 25px -9px gray; /* Sombra para destacar el navbar */
-    }
-
-    nav .logo img {
-        height: 50px;
-    }
-
-    nav ul {
-        list-style: none;
-        display: flex;
-        margin-left: auto;
-    }
-
-    nav ul li {
-        margin-left: 20px;
-    }
-
-    nav ul li a {
-        color: var(--primary-color); /* Color azul del texto */
-        background-color: var(--complement); /* Fondo blanco por defecto */
-        text-decoration: none;
-        font-size: 18px;
-        padding: 10px 20px; /* Añade más espacio dentro del botón */
-        border-radius: 15px;
-        transition: background-color 0.3s, color 0.3s;
-        border: 1px solid var(--primary-color); /* Bordes azules */
-    }
-
-    nav ul li a:hover {
-        background-color: var(--primary-color); /* Fondo azul al hacer hover */
-        color: var(--complement); /* Texto blanco al hacer hover */
-    }
-
-    /* Estilos cuando un enlace está activo (seleccionado) */
-    nav ul li a.active {
-        background-color: var(--primary-color); /* Fondo azul cuando está activo */
-        color: var(--complement); /* Letras blancas cuando está activo */
-    }
-
-    /* Ocultar menú en móvil y mostrar botón */
-    .menu-toggle {
-        display: none;
-        font-size: 30px;
-        color: black; /* Color del ícono de menú hamburguesa */
-        cursor: pointer;
-    }
-
-    .form-group label{
-        padding-bottom: 8px;
-    }
-    .form-group input , .form-group textarea{
-        padding-inline: 4px;
-    }
-    .form-group textarea{
-        padding: 8px;
-    }
-    .paddingHome{
-        padding: 100px;
-    }
-}
 
